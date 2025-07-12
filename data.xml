@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><plateforme>
+    <profil>
+        <nom>BIAYE</nom>
+        <email>biaye@</email>
+        <statut>Etudiant </statut>
+        <parametres>
+            <notification active="oui"/>
+    <contacts>
+        <contact>
+            <nom>Jean Dupont</nom>
+            <telephone>0601020304</telephone>
+            <email>jean.dupont@email.com</email>
+            <statut>En ligne</statut>
+        </contact>
+        <contact>
+            <nom>Marie Martin</nom>
+            <telephone>0605060708</telephone>
+            <email>marie.martin@email.com</email>
+            <statut>Absent</statut>
+        </contact>
+    </contacts>
+    <groupes>
+        <groupe>
+            <nom>Amis</nom>
+            <contact-ref>Jean Dupont</contact-ref>
+            <contact-ref>Marie Martin</contact-ref>
+            <membres>
+                <contact-ref>Idi ka </contact-ref>
+            </membres>
+        </groupe>
+    </groupes>
+    <discussions>
+        <message>
+            <expéditeur>momo</expéditeur>
+            <destinataire>momo</destinataire>
+            <texte>Salut amis !</texte>
+            <horodatage>2025-07-11 05:36</horodatage>
+        </message>
+    </discussions>
+</plateforme>

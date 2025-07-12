@@ -1,0 +1,26 @@
+<!ELEMENT plateforme (profil, contacts, groupes, discussions)>
+        <!ELEMENT profil (nom, email, statut, parametres)>
+        <!ELEMENT nom (#PCDATA)>
+        <!ELEMENT email (#PCDATA)>
+        <!ELEMENT statut (#PCDATA)>
+        <!ELEMENT parametres (notification*, theme)>
+        <!ELEMENT notification EMPTY>
+        <!ATTLIST notification active (oui|non) #REQUIRED>
+        <!ELEMENT theme (#PCDATA)>
+        <!ELEMENT contacts (contact*)>
+        <!ELEMENT contact (nom, telephone?, email?, statut)>
+        <!ELEMENT telephone (#PCDATA)>
+        <!ELEMENT groupes (groupe*)>
+        <!ELEMENT groupe (nom, membres)>
+        <!ELEMENT membres (contact-ref+)>
+        <!ELEMENT contact-ref (#PCDATA)> <!-- Référence à un nom de contact existant -->
+        <!ELEMENT discussions (message | fichier)*>
+        <!ELEMENT message (expéditeur, destinataire*, texte, horodatage)>
+        <!ELEMENT expéditeur (#PCDATA)>
+        <!ELEMENT destinataire (#PCDATA)>
+        <!ELEMENT texte (#PCDATA)>
+        <!ELEMENT horodatage (#PCDATA)>
+        <!ELEMENT fichier (expéditeur, destinataire*, nom, type, taille, contenu, horodatage)>
+        <!ELEMENT type (#PCDATA)>
+        <!ELEMENT taille (#PCDATA)>
+        <!ELEMENT contenu (#PCDATA)>
